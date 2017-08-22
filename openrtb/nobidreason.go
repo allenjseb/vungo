@@ -100,6 +100,8 @@ const (
 	// NoBidReasonVungleNoCreatives signals the exchange server that a no-bid is due to no viable creatives.
 	NoBidReasonVungleNoCreatives
 
+	// NoBidReasonVungleNoCandidates signals the exchange server that a no-bid is due to no viable campaigns and creatives.
+	NoBidReasonVungleNoCandidates
 	// Add new entries here.
 
 	lastVungleNoBidReason
@@ -128,5 +130,6 @@ var NoBidReasonNames = map[NoBidReason]string{
 
 	NoBidReasonVungleNoCampaigns:    "NO_BID_VUNGLE_NO_CAMPAIGNS",
 	NoBidReasonVungleNoCreatives:    "NO_BID_VUNGLE_NO_CREATIVES",
+	NoBidReasonVungleNoCandidates:   "NO_BID_VUNGLE_NO_CANDIDATES",
 	NoBidReasonVungleDataSciNoServe: "NO_BID_VUNGLE_DATASCI_NO_SERVE",
 }
