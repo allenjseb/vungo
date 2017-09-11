@@ -1,6 +1,7 @@
 package vastutil_test
 
 import (
+	"context"
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
@@ -11,7 +12,6 @@ import (
 
 	"github.com/Vungle/vungo/vast"
 	"github.com/Vungle/vungo/vast/vastutil"
-	"golang.org/x/net/context"
 )
 
 func TestUnwrap(t *testing.T) {
